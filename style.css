@@ -1,17 +1,12 @@
-:root { --bg: #050505; --white: #ffffff; --bronze: #a67c52; --grey: #a0a0a0; --border: #222; }
-body { font-family: 'Georgia', serif; background-color: var(--bg); color: var(--white); margin: 0; line-height: 1.6; }
-nav { padding: 40px 10%; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-.logo { letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; }
-section { padding: 80px 10%; }
-h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 30px; }
-.accent { color: var(--bronze); font-style: italic; }
-.hero-desc { font-size: 1.25rem; color: var(--grey); max-width: 700px; margin-bottom: 40px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-.card { border: 1px solid var(--border); padding: 40px; }
-.phase { color: var(--bronze); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px; }
-.step { display: none; }
-.step.active { display: block; }
-form { max-width: 800px; margin-top: 50px; }
-input, select, textarea { width: 100%; background: #111; border: 1px solid var(--border); color: var(--white); padding: 15px; margin-bottom: 20px; font-family: 'Georgia', serif; box-sizing: border-box; }
-.btn { background: var(--bronze); color: #000; padding: 20px 40px; border: none; text-transform: uppercase; font-weight: bold; cursor: pointer; letter-spacing: 2px; }
-footer { border-top: 1px solid var(--border); padding: 50px 10%; text-align: center; color: var(--grey); font-size: 0.8rem; }
+:root { 
+    --bg: #050505; 
+    --white: #ffffff; 
+    --bronze: #a67c52; /* This is the gold/bronze accent */
+    --border: #222; 
+}
+
+/* Apply gold to headers and accents */
+h1, h2, h3 { color: var(--white); }
+.accent { color: var(--bronze); }
+.btn { background: var(--bronze); color: #000; border: none; padding: 20px 40px; }
+nav a { color: var(--bronze); text-decoration: none; }
