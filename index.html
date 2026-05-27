@@ -2,124 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sublime Management Group | Organizational Architecture</title>
-    <style>
-        :root {
-            --bg: #050505;
-            --white: #ffffff;
-            --bronze: #a67c52;
-            --grey: #a0a0a0;
-            --border: #222;
-        }
-        body { font-family: 'Georgia', serif; background-color: var(--bg); color: var(--white); margin: 0; padding: 0; line-height: 1.6; }
-        
-        /* Navigation */
-        nav { padding: 40px 10%; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-        .logo { letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; }
-        
-        /* Hero & Narrative */
-        section { padding: 100px 10%; }
-        h1 { font-size: 4rem; line-height: 1.1; margin-bottom: 30px; font-weight: normal; }
-        .accent { color: var(--bronze); font-style: italic; }
-        .hero-desc { font-size: 1.25rem; color: var(--grey); max-width: 700px; margin-bottom: 40px; }
-        
-        /* Blueprint Grid */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px; }
-        .card { border: 1px solid var(--border); padding: 50px; }
-        .phase { color: var(--bronze); font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px; }
-        h3 { font-size: 1.5rem; margin: 0 0 20px 0; }
-        
-        /* Multi-Step Intake */
-        .step { display: none; }
-        .step.active { display: block; }
-        form { max-width: 800px; margin-top: 50px; }
-        input, select, textarea { width: 100%; background: #111; border: 1px solid var(--border); color: var(--white); padding: 15px; margin-bottom: 20px; font-family: 'Georgia', serif; font-size: 1rem; box-sizing: border-box; }
-        .btn { background: var(--bronze); color: #000; padding: 20px 40px; border: none; text-transform: uppercase; font-weight: bold; cursor: pointer; letter-spacing: 2px; }
-        fieldset { border: 1px solid var(--border); padding: 30px; margin-bottom: 30px; }
-        legend { color: var(--bronze); padding: 0 10px; font-size: 1.2rem; }
-        
-        /* Footer */
-        footer { border-top: 1px solid var(--border); margin-top: 100px; padding: 50px 10%; text-align: center; color: var(--grey); }
-    </style>
 </head>
 <body>
     <nav><div class="logo">Sublime MANAGEMENT GROUP</div></nav>
-
-    <section id="home">
+    <section>
         <h1>Stop Building a Skyscraper <span class="accent">on a Residential Foundation.</span></h1>
         <p class="hero-desc">Your vision is a skyscraper. Your current operations are a two-bedroom house. We build the organizational infrastructure that lets your ambition stand.</p>
-    </section>
-
-    <section id="blueprint">
         <div class="grid">
-            <div class="card">
-                <div class="phase">Phase 00</div>
-                <h3>Narrative Architecture</h3>
-                <p>We extract the founder's vision, codify it into an Identity Manifesto, and build the cultural DNA.</p>
-            </div>
-            <div class="card">
-                <div class="phase">Phase 01</div>
-                <h3>Foundation Sprint</h3>
-                <p>We engineer the load-bearing operational systems and precision structures required for high-stakes ventures.</p>
-            </div>
-            <div class="card">
-                <div class="phase">Phase 02</div>
-                <h3>Architectural Oversight</h3>
-                <p>Continuous refinement of the structure to ensure the organization scales without structural failure.</p>
-            </div>
+            <div class="card"><div class="phase">Phase 00</div><h3>Narrative Architecture</h3><p>Extracting founder vision, codifying Identity Manifestos, and building cultural DNA.</p></div>
+            <div class="card"><div class="phase">Phase 01</div><h3>Foundation Sprint</h3><p>Engineering load-bearing operational systems for high-stakes ventures.</p></div>
+            <div class="card"><div class="phase">Phase 02</div><h3>Architectural Oversight</h3><p>Continuous refinement to ensure structural integrity as the organization scales.</p></div>
         </div>
     </section>
-
-    <section id="intake">
+    <section>
         <form id="extractionForm" action="https://formspree.io/f/mojbynnr" method="POST">
             <div id="step1" class="step active">
-                <fieldset>
-                    <legend>01: Founder Identity</legend>
-                    <input type="text" name="first_name" placeholder="First Name" required>
-                    <input type="text" name="last_name" placeholder="Last Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <input type="text" name="company_name" placeholder="Company Name" required>
-                </fieldset>
-                <button type="button" class="btn" onclick="nextStep(2)">NEXT: COMPANY PROFILE &rarr;</button>
+                <h3>01: Founder Identity</h3>
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <button type="button" class="btn" onclick="nextStep(2)">NEXT STEP &rarr;</button>
             </div>
-
             <div id="step2" class="step">
-                <fieldset>
-                    <legend>02: Company Profile</legend>
-                    <select name="company_stage" required><option value="" disabled selected>Company Stage</option><option>Concept / Seed</option><option>Operational / Scaling</option><option>Restructuring</option></select>
-                    <select name="team_size" required><option value="" disabled selected>Team Size</option><option>Solo Founder</option><option>2-5 People</option><option>6-15 People</option><option>16-50 People</option><option>100+ People</option></select>
-                    <select name="revenue_range" required><option value="" disabled selected>Annual Revenue Range</option><option>Pre-Revenue</option><option>Under $250K</option><option>$250K – $1M</option><option>$1M – $5M</option><option>$25M+</option></select>
-                    <select name="operational_challenge" required><option value="" disabled selected>Primary Operational Challenge</option><option>Team Alignment</option><option>Scaling Bottlenecks</option><option>Accountability</option><option>Culture</option><option>Tooling Chaos</option></select>
-                </fieldset>
-                <button type="button" class="btn" onclick="nextStep(3)">NEXT: VISION EXTRACTION &rarr;</button>
+                <h3>02: Company Profile</h3>
+                <select name="stage"><option>Company Stage</option><option>Concept / Seed</option><option>Operational / Scaling</option></select>
+                <select name="team_size"><option>Team Size</option><option>Solo Founder</option><option>2-5 People</option><option>6-15 People</option></select>
+                <button type="button" class="btn" onclick="nextStep(3)">NEXT STEP &rarr;</button>
             </div>
-
             <div id="step3" class="step">
-                <fieldset>
-                    <legend>03: Vision Codification</legend>
-                    <textarea name="vision" rows="6" placeholder="Describe the Skyscraper you are building..." required></textarea>
-                    <select name="engagement_type" required><option value="" disabled selected>Desired Engagement</option><option>Phase 00: Narrative Architecture</option><option>Phase 01: Foundation Sprint</option><option>Phase 02: Architectural Oversight</option></select>
-                    <select name="timeframe" required><option value="" disabled selected>Engagement Timeframe</option><option>Immediately</option><option>1-3 Months</option><option>6+ Months</option></select>
-                    <select name="sweat_equity" required><option value="" disabled selected>Open to Sweat Equity Alignment?</option><option>Yes - Open to discussing</option><option>No - Cash only</option><option>Depends on structure</option></select>
-                </fieldset>
+                <h3>03: Vision Codification</h3>
+                <textarea name="vision" rows="6" placeholder="Describe the skyscraper you are building..."></textarea>
                 <button type="submit" class="btn">COMMIT DATA TO ARCHITECTURE</button>
             </div>
         </form>
     </section>
-
     <footer>
-        <div class="logo" style="margin-bottom: 20px;">Sublime Management Group</div>
-        <p style="font-size: 0.8rem; margin-bottom: 5px;">Organizational Architecture &bull; Narrative Codification &bull; Operational Integrity</p>
-        <p style="font-size: 0.75rem; letter-spacing: 1px; color: var(--bronze);">&copy; 2026 SUBLIME MANAGEMENT GROUP. ALL RIGHTS RESERVED.</p>
-        <p style="font-size: 0.7rem; margin-top: 20px; font-style: italic;">Live as swimmers carried by destiny.</p>
+        <p>&copy; 2026 SUBLIME MANAGEMENT GROUP. ALL RIGHTS RESERVED.</p>
+        <p style="font-style: italic; margin-top: 10px;">Live as swimmers carried by destiny.</p>
     </footer>
-
-    <script>
-        function nextStep(step) {
-            document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
-            document.getElementById('step' + step).classList.add('active');
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
