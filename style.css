@@ -1,1 +1,5 @@
+document.getElementById('visionForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Architecture request received. We are processing your vision.');
+});
 
