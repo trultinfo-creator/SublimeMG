@@ -1,39 +1,11 @@
-:root { 
-    --bg: #050505; 
-    --text: #ffffff; 
-    --bronze: #a67c52; 
-}
+:root { --bg: #050505; --text: #ffffff; --bronze: #a67c52; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
-html, body {
-    width: 100%;
-    min-height: 100%;
-    background-color: var(--bg);
-    color: var(--text);
-    font-family: 'Georgia', serif;
-}
-
-/* This container ensures the content fills the space correctly */
-body {
-    display: flex;
-    flex-direction: column;
-    padding: 10vh 5vw; /* This distributes the content vertically */
-    justify-content: flex-start;
-}
-
-.logo { color: var(--bronze); font-size: 0.9rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 8vh; }
-
-h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; font-weight: 800; margin-bottom: 5vh; }
-
-p { font-size: 1.2rem; line-height: 1.6; color: #d1d1d1; margin-bottom: 3vh; max-width: 800px; }
-
-.btn { 
-    display: inline-block; 
-    background: var(--bronze); 
-    color: #000; 
-    padding: 20px 40px; 
-    text-decoration: none; 
-    font-weight: bold; 
-    text-transform: uppercase; 
-    margin-top: 5vh; 
-}
+html, body { width: 100%; min-height: 100%; background-color: var(--bg); color: var(--text); font-family: 'Georgia', serif; }
+body { display: flex; flex-direction: column; padding: 60px 20px; }
+.logo { color: var(--bronze); font-size: 0.9rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 40px; }
+nav { margin-bottom: 40px; }
+nav a { color: var(--bronze); text-decoration: none; font-size: 0.9rem; margin-right: 15px; border-bottom: 1px solid var(--bronze); }
+h1 { font-size: 2.2rem; line-height: 1.1; font-weight: 800; margin-bottom: 30px; }
+p { font-size: 1.1rem; line-height: 1.6; color: #d1d1d1; margin-bottom: 25px; }
+.btn { display: block; background: var(--bronze); color: #000; padding: 20px; text-decoration: none; font-weight: bold; text-transform: uppercase; text-align: center; margin-top: 30px; width: 100%; }
+input, textarea { width: 100%; margin-bottom: 20px; padding: 15px; background: #111; border: 1px solid #333; color: white; font-size: 1rem; }
