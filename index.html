@@ -2,46 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sublime Management Group | Organizational Architecture</title>
 </head>
 <body>
-    <nav><div class="logo">Sublime MANAGEMENT GROUP</div></nav>
-    <section>
-        <h1>Stop Building a Skyscraper <span class="accent">on a Residential Foundation.</span></h1>
-        <p class="hero-desc">Your vision is a skyscraper. Your current operations are a two-bedroom house. We build the organizational infrastructure that lets your ambition stand.</p>
-        <div class="grid">
-            <div class="card"><div class="phase">Phase 00</div><h3>Narrative Architecture</h3><p>Extracting founder vision, codifying Identity Manifestos, and building cultural DNA.</p></div>
-            <div class="card"><div class="phase">Phase 01</div><h3>Foundation Sprint</h3><p>Engineering load-bearing operational systems for high-stakes ventures.</p></div>
-            <div class="card"><div class="phase">Phase 02</div><h3>Architectural Oversight</h3><p>Continuous refinement to ensure structural integrity as the organization scales.</p></div>
+    <nav>
+        <div class="logo">Sublime MANAGEMENT GROUP</div>
+        <div class="nav-links">
+            <a href="blueprint.html">Blueprint</a>
+            <a href="industries.html">Industries</a>
         </div>
-    </section>
+    </nav>
+
     <section>
-        <form id="extractionForm" action="https://formspree.io/f/mojbynnr" method="POST">
-            <div id="step1" class="step active">
-                <h3>01: Founder Identity</h3>
-                <input type="text" name="first_name" placeholder="First Name" required>
-                <input type="text" name="last_name" placeholder="Last Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <button type="button" class="btn" onclick="nextStep(2)">NEXT STEP &rarr;</button>
-            </div>
-            <div id="step2" class="step">
-                <h3>02: Company Profile</h3>
-                <select name="stage"><option>Company Stage</option><option>Concept / Seed</option><option>Operational / Scaling</option></select>
-                <select name="team_size"><option>Team Size</option><option>Solo Founder</option><option>2-5 People</option><option>6-15 People</option></select>
-                <button type="button" class="btn" onclick="nextStep(3)">NEXT STEP &rarr;</button>
-            </div>
-            <div id="step3" class="step">
-                <h3>03: Vision Codification</h3>
-                <textarea name="vision" rows="6" placeholder="Describe the skyscraper you are building..."></textarea>
-                <button type="submit" class="btn">COMMIT DATA TO ARCHITECTURE</button>
-            </div>
-        </form>
+        <h1>Stop Building a Skyscraper on a Residential Foundation.</h1>
+        <p class="hero-desc">We engineer the internal DNA for high-stakes ventures in Hospitality, Entertainment, and Finance.</p>
+        
+        <div class="narrative-block">
+            <h3>The Founder's Dilemma</h3>
+            <p>Strategic vision vs. operational overwhelm. You have the ambition, but the internal architecture is failing to support the scale.</p>
+            
+            <h3>Inside World Philosophy</h3>
+            <p>We build infrastructure that reflects the founder's intent. Your organization should not be a struggle against systems, but an extension of your vision.</p>
+        </div>
+
+        <a href="extraction.html" class="btn">BEGIN YOUR VISION EXTRACTION</a>
     </section>
+
     <footer>
         <p>&copy; 2026 SUBLIME MANAGEMENT GROUP. ALL RIGHTS RESERVED.</p>
-        <p style="font-style: italic; margin-top: 10px;">Live as swimmers carried by destiny.</p>
     </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
