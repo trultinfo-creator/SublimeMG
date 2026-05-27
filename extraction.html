@@ -1,33 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Vision Extraction | Sublime Management Group</title>
-</head>
-<body>
-    <nav><div class="logo">Sublime MANAGEMENT GROUP</div></nav>
-    <section>
-        <h1>Vision Extraction Intake</h1>
-        <form action="https://formspree.io/f/mojbynnr" method="POST">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="text" name="venture" placeholder="Venture Name" required>
-            <select name="industry">
-                <option value="">Select Industry</option>
-                <option value="Hospitality">Hospitality</option>
-                <option value="Entertainment">Entertainment</option>
-                <option value="Finance">Finance</option>
-            </select>
-            <textarea name="pain_point" placeholder="Current Scaling Pain Point" required></textarea>
-            
-            [span_10](start_span)<p>Are you seeking a vendor or an equity-aligned partner?[span_10](end_span)</p>
-            <input type="text" name="alignment" required>
-            
-            [span_11](start_span)<p>What is the primary operational overwhelm preventing your vision?[span_11](end_span)</p>
-            <textarea name="overwhelm" required></textarea>
-            
-            <button type="submit" class="btn">COMMIT DATA TO ARCHITECTURE</button>
-        </form>
-    </section>
-</body>
-</html>
+<form action="https://formspree.io/f/mojbynnr" method="POST">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="venture" placeholder="Venture Name" required>
+    <select name="industry">
+        <option value="">Select Industry</option>
+        <option value="Hospitality">Hospitality</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Finance">Finance</option>
+    </select>
+    <input type="text" name="pain_point" placeholder="Current Scaling Pain Point" required>
+    
+    <label>Are you seeking a vendor or an equity-aligned partner?</label>
+    <input type="text" name="alignment" required>
+    
+    <label>What is the primary operational overwhelm preventing your vision?</label>
+    <textarea name="overwhelm" required></textarea>
+    
+    <button type="submit" class="btn">COMMIT DATA TO ARCHITECTURE</button>
+</form>
