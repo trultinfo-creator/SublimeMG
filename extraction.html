@@ -1,33 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Vision Extraction | SMG</title>
-</head>
+<html>
+<head><link rel="stylesheet" href="style.css"></head>
 <body>
-    <nav><div class="logo">Sublime MANAGEMENT GROUP</div></nav>
-    <section>
-        <h1>Vision Extraction Intake</h1>
-        <form action="https://formspree.io/f/mojbynnr" method="POST">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="text" name="venture" placeholder="Venture Name" required>
-            <select name="industry" required>
-                <option value="">Select Industry</option>
-                <option value="Hospitality">Hospitality</option>
-                <option value="Entertainment">Entertainment</option>
-                <option value="Finance">Finance</option>
-            </select>
-            <input type="text" name="pain_point" placeholder="Current Scaling Pain Point" required>
-            
-            <p>Are you seeking a vendor or an equity-aligned partner?</p>
-            <input type="text" name="alignment" required>
-            
-            <p>What is the primary operational overwhelm preventing your vision?</p>
-            <textarea name="overwhelm" required></textarea>
-            
-            <button type="submit" class="btn">COMMIT DATA TO ARCHITECTURE</button>
-        </form>
-    </section>
+    <div class="logo">Sublime MANAGEMENT GROUP</div>
+    <h1>Vision Extraction Intake</h1>
+    <form action="https://formspree.io/f/mojbynnr" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="venture" placeholder="Venture Name" required>
+        <select name="industry"><option>Hospitality</option><option>Entertainment</option><option>Finance</option></select>
+        <input type="text" name="pain_point" placeholder="Current Scaling Pain Point" required>
+        <p>Seeking vendor or equity-aligned partner?</p>
+        <input type="text" name="alignment">
+        <p>Primary operational overwhelm?</p>
+        <textarea name="overwhelm"></textarea>
+        <button type="submit" class="btn">COMMIT DATA TO ARCHITECTURE</button>
+    </form>
 </body>
 </html>
